@@ -24,12 +24,13 @@ html {
     --icon-color: #b9bbbe;
     --sidebar-width: 70px;
 }
+
 /* MAIN */
 main {
     width: 100%;
     height: 100vh;
     background-color: red;
-    display: flex;
+    display: inline-block;
 }
 
 /* Header-Main Section */
@@ -55,9 +56,9 @@ main {
 
 /* Sidebar-Servers Section */
 .sidebar-servers {
-    height: 100%;
+    height: calc(100vh - 30px);
     width: var(--sidebar-width);
-    background-color: var(--sidebar-color);
+    background-color: var(--header-main);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +74,32 @@ main {
 
 /* Main-Section */
 .main-section {
-    width: calc(100% - (var(--sidebar-width)));
-    height: 100%;
+    display: flex;
+}
+
+.current-server {
+    width: calc(100% - var(--sidebar-width));
+    height: calc(100vh - 30px);
     background-color: var(--main-color);
+    display: flex;
+}
+
+/* Current Server Section */
+.channels {
+    width: 250px;
+    height: calc(100vh - 30px);
+    background-color: var(--sidebar-color);
+}
+
+.chat {
+    width: calc(100% - 500px);
+    height: calc(100vh - 30px);
+}
+
+.participants {
+    width: 250px;
+    height: calc(100vh - 80px);
+    background-color: var(--sidebar-color);
+    display: flex;
+    align-self: flex-end;
 }
