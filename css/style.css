@@ -22,11 +22,14 @@ html {
     --sidebar-grey: #85898e;
     --chat-color: #40444b;
     --icon-color: #b9bbbe;
+    --sidebar-width: 70px;
 }
 /* MAIN */
 main {
     width: 100%;
     height: 100vh;
+    background-color: red;
+    display: flex;
 }
 
 /* Header-Main Section */
@@ -48,4 +51,29 @@ main {
 .header-main-title {
     color: #a1a4a8;
     font-size: 1rem;
+}
+
+/* Sidebar-Servers Section */
+.sidebar-servers {
+    height: 100%;
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: .5rem;
+    overflow: hidden;
+}
+
+/* Main-Section */
+.main-section {
+    width: calc(100% - (var(--sidebar-width)));
+    height: 100%;
+    background-color: var(--main-color);
 }
