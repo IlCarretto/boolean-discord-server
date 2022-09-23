@@ -13,3 +13,39 @@ img {
 html {
     font-family: 'Nunito Sans', sans-serif;
 }
+
+:root {
+    --header-main: #202225;
+    --sidebar-color: #2f3136;
+    --main-color: #36393f;
+    --user-color: #327eb1;
+    --sidebar-grey: #85898e;
+    --chat-color: #40444b;
+    --icon-color: #b9bbbe;
+}
+/* MAIN */
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header-Main Section */
+.header-main {
+    width: 100%;
+    height: 30px;
+    background-color: var(--header-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+
+.header-main i {
+    padding: 0 .3rem;
+    color: var(--icon-color);
+}
+
+.header-main-title {
+    color: #a1a4a8;
+    font-size: 1rem;
+}
