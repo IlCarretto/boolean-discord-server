@@ -29,7 +29,7 @@ html {
 main {
     width: 100%;
     height: 100vh;
-    background-color: red;
+    background-color: var(--header-main);
     display: inline-block;
 }
 
@@ -64,6 +64,22 @@ main {
     align-items: center;
 }
 
+.sidebar-servers .circle:first-child {
+    margin-bottom: 5px;
+    background-color: var(--chat-color);
+    background-image: url(../img/discord-logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sidebar-servers hr {
+    width: 35px;
+    height: 2px;
+    background-color: var(--chat-color);
+    border: none;
+}
+
 .circle {
     height: 50px;
     width: 50px;
@@ -82,15 +98,74 @@ main {
     height: calc(100vh - 30px);
     background-color: var(--main-color);
     display: flex;
+    border-top-left-radius: 10px;
 }
 
 /* Current Server Section */
+/* Channel Section */
 .channels {
     width: 250px;
     height: calc(100vh - 30px);
     background-color: var(--sidebar-color);
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
+.channels-info {
+    height: 50px;
+    display: flex;
+    color: white; 
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #25262a;
+}
+
+.server-name {
+    font-size: 1rem;
+}
+
+.server-lvl {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+}
+
+.lvl-bar {
+    margin: .5rem 0;
+    height: 5px;
+    background-color: #18191c;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.lvl {
+    color: white;
+    font-size: .8rem;
+}
+
+.boost {
+    color: #94969a;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.boost i {
+    font-size: .6rem;
+}
+
+.channels hr {
+    height: 1px;
+    background-color: #3b3d42;
+    border: none;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Chat */
 .chat {
     width: calc(100% - 500px);
     height: calc(100vh - 30px);
