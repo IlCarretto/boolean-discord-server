@@ -12,6 +12,7 @@ img {
 /* COMMON */
 html {
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 100%;
 }
 
 :root {
@@ -23,6 +24,27 @@ html {
     --chat-color: #40444b;
     --icon-color: #b9bbbe;
     --sidebar-width: 70px;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+/* Circles */
+.circle {
+    border-radius: 50%;
+    margin-top: .5rem;
+    overflow: hidden;
+}
+
+.giga-circle {
+    height: 50px;
+    width: 50px;
+}
+
+.small-circle {
+    width: 25px;
+    height: 25px;
 }
 
 /* MAIN */
@@ -80,13 +102,6 @@ main {
     border: none;
 }
 
-.circle {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-top: .5rem;
-    overflow: hidden;
-}
 
 /* Main-Section */
 .main-section {
@@ -112,6 +127,7 @@ main {
     flex-direction: column;
 }
 
+/* Channels-Info Section */
 .channels-info {
     height: 50px;
     display: flex;
@@ -163,6 +179,49 @@ main {
     border: none;
     width: 95%;
     margin: 0 auto;
+}
+
+/* Text-channels Section */
+.text-n-voice-channels {
+    color: var(--sidebar-grey);
+    padding: 1rem .5rem;
+    overflow: auto;
+}
+
+.text-n-voice-channels ul li {
+    list-style-type: none;
+    display: flex;
+}
+
+.text-n-voice-channels h4 {
+    font-size: .8rem;
+}
+
+.text-n-voice-channels ul li:not(:first-of-type) {
+    margin-left: 1rem;
+    padding: .3rem 0;
+}
+
+#small-icon {
+    font-size: .5rem;
+    line-height: 22px;
+    margin-right: 5px;
+}
+
+.text-n-voice-channels ul li i {
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+
+/* Voice-Channel Section */
+#user {
+    align-items: end;
+    margin-left: 2rem;
+}
+
+.nickname {
+    color: var(--sidebar-grey);
+    margin-left: 10px;
 }
 
 /* Chat */
