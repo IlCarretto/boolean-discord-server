@@ -33,18 +33,30 @@ html {
 /* Circles */
 .circle {
     border-radius: 50%;
-    margin-top: .5rem;
     overflow: hidden;
 }
 
 .giga-circle {
     height: 50px;
     width: 50px;
+    margin-top: .5rem;
 }
 
 .small-circle {
     width: 25px;
     height: 25px;
+    margin-top: .5rem;
+}
+
+.medium-circle {
+    width: 40px;
+    height: 40px;
+}
+
+.users-circle {
+    width: 45px;
+    height: 45px;
+    margin-top: .5rem;
 }
 
 /* MAIN */
@@ -191,6 +203,7 @@ main {
 .text-n-voice-channels ul li {
     list-style-type: none;
     display: flex;
+    align-items: center;
 }
 
 .text-n-voice-channels h4 {
@@ -229,11 +242,120 @@ main {
     width: calc(100% - 500px);
     height: calc(100vh - 30px);
 }
+/* Chat Header Section */
+.chat-header {
+    height: 50px;
+    background-color: #36393f;
+    border-bottom: 1px solid #25262a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.chat-header i {
+    color: var(--icon-color);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.current-channel {
+    display: flex;
+    align-items: center;
+}
+
+.current-channel-title {
+    margin-left: .5rem;
+    color: white;
+}
+
+#users-group {
+    color: white;
+}
+
+.searchbar {
+    background-color: #202225;
+    padding: .3rem .5rem;
+    text-decoration: none;
+    margin-left: .5rem;
+    color: #75777a;
+    border-radius: 5px;
+}
+
+/* Chat Main Section */
+.chat-main {
+    height: calc(100% - 50px);
+    overflow: scroll;
+}
+
+.user {
+    display: flex;
+    padding: 1rem;
+}
+
+.username {
+    color: var(--user-color);
+}
+
+.message {
+    color: #a1aba5;
+    max-width: 800px;
+}
+
+.user span {
+    color: #778080;
+    font-size: .8rem;
+}
+
+.user-content {
+    margin-left: 10px;
+}
+
+/* Participants */
 .participants {
     width: 250px;
     height: calc(100vh - 80px);
     background-color: var(--sidebar-color);
     display: flex;
+    flex-direction: column;
     align-self: flex-end;
+    padding: 1rem;
+    overflow: auto;
+}
+
+/* Booleaner Section */
+.participants li{
+    list-style-type: none;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    color: var(--sidebar-grey);
+}
+
+.label h4 {
+    font-size: .9rem;
+}
+
+.label *:not(:first-child) {
+    margin-left: 5px;
+}
+
+.participants .username {
+    display: flex;
+    align-items: center;
+}
+
+.username span {
+    margin-left: .5rem;
+    font-weight: 700;
+}
+
+/* Offline Section */
+.offline {
+    margin-top: 2rem;
+}
+
+.offline .username {
+    opacity: .5;
 }
