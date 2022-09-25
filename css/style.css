@@ -298,7 +298,6 @@ main {
 
 .message {
     color: #a1aba5;
-    max-width: 800px;
 }
 
 .user span {
@@ -308,6 +307,7 @@ main {
 
 .user-content {
     margin-left: 10px;
+    width: 85%;
 }
 
 /* ChatBox Section */
