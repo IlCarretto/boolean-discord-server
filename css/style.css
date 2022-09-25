@@ -283,8 +283,8 @@ main {
 
 /* Chat Main Section */
 .chat-main {
-    height: calc(100% - 50px);
-    overflow: scroll;
+    height: calc(100% - 150px);
+    overflow: auto;
 }
 
 .user {
@@ -309,6 +309,39 @@ main {
 .user-content {
     margin-left: 10px;
 }
+
+/* ChatBox Section */
+.chatbox {
+    margin-top: 2rem;
+    
+}
+
+.chatbox-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40444b;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.type-here {
+    display: flex;
+    color: #666970;
+    font-size: 1.2rem;
+}
+
+.chatbox-icons {
+    display: flex;
+}
+
+.chatbox i {
+    color: var(--icon-color);
+    padding: 0 .5rem;
+    font-size: 1.6rem;
+}
+
 
 /* Participants */
 .participants {
@@ -357,5 +390,5 @@ main {
 }
 
 .offline .username {
-    opacity: .5;
+    opacity: .3;
 }
